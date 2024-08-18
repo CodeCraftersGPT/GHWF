@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GHWF/static/css/main.f855e6bc.css",
+    "main.js": "/GHWF/static/js/main.6015156b.js",
+    "static/js/453.adbf5aba.chunk.js": "/GHWF/static/js/453.adbf5aba.chunk.js",
+    "index.html": "/GHWF/index.html",
+    "main.f855e6bc.css.map": "/GHWF/static/css/main.f855e6bc.css.map",
+    "main.6015156b.js.map": "/GHWF/static/js/main.6015156b.js.map",
+    "453.adbf5aba.chunk.js.map": "/GHWF/static/js/453.adbf5aba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.6015156b.js"
+  ]
+}
