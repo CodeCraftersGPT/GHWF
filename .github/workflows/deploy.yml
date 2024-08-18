@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build:
@@ -37,3 +34,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./simple-react-login/build
+        force_orphan: true   # Forces a clean slate on the gh-pages branch
+        keep_files: false    # Ensures that no old files are kept on the gh-pages branch
