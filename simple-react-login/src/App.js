@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Login</h2>
+        <h2>Login-CC</h2>
         <form>
           <label>
             Username:
