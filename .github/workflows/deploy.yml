@@ -1,6 +1,3 @@
-# give me the yaml file to deploy the app to github pages when the code is pushed to the main branch
-# it is reactjs application and depned on nodejs 18.17.1
-
 name: Deploy React App
 
 on:
@@ -24,15 +21,19 @@ jobs:
       with:
         node-version: '18.17.1'
 
+    - name: Change working directory to simpleloginform
+      run: cd simpleloginform
+
     - name: Install dependencies
       run: npm install
+      working-directory: ./simpleloginform
 
     - name: Build the application
       run: npm run build
+      working-directory: ./simpleloginform
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
-
+        publish_dir: ./simpleloginform/build
