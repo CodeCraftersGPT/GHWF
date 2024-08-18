@@ -26,7 +26,7 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      working-directory: ./ssimple-react-login
+      working-directory: ./simple-react-login
 
     - name: Build the application
       run: npm run build
