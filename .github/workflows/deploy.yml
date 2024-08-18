@@ -21,19 +21,19 @@ jobs:
       with:
         node-version: '18.17.1'
 
-    - name: Change working directory to simpleloginform
-      run: cd simpleloginform
+    - name: Change working directory to simple-react-login
+      run: cd simple-react-login
 
     - name: Install dependencies
       run: npm install
-      working-directory: ./simpleloginform
+      working-directory: ./ssimple-react-login
 
     - name: Build the application
       run: npm run build
-      working-directory: ./simpleloginform
+      working-directory: ./simple-react-login
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./simpleloginform/build
+        publish_dir: ./simple-react-login/build
